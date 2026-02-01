@@ -1,0 +1,81 @@
+================================================================================
+HAMILTONIAN EVOLUTION - OPTIMIZATION REPORT
+Generated: 2026-02-01 14:37:08
+================================================================================
+
+SYSTEM
+--------------------------------------------------------------------------------
+Model: 2-qubit Transverse Field Ising Model
+Hamiltonian: H = XX + ZI + IZ
+Evolution time: θ = π/7 ≈ 0.4487989505 rad ≈ 25.714286°
+Target operator: exp(iθH)
+
+Hamiltonian eigenvalues:
+  E0 = -2.2360679775
+  E1 = -1.0000000000
+  E2 = 1.0000000000
+  E3 = 2.2360679775
+
+================================================================================
+OPTIMIZATION PARAMETERS
+================================================================================
+Initial T-budget: 100
+Number of patterns tested: 5
+Optimizer: RPA with effort=5
+Metric: Minimum operator norm ||U - Ũ||
+
+================================================================================
+BEST CIRCUIT
+================================================================================
+Pattern: Symmetric-Suzuki
+Initial T-count: 64
+Optimized T-count: 2
+Reduction: 0 T-gates (0.0%)
+Total gates: 5
+
+Distance Metrics:
+  Operator norm ||U - Ũ||: 1.157342592359612e+00
+  Frobenius norm: 1.693622587432368e+00
+  Trace distance: 8.468112937161839e-01
+  Process fidelity: 0.822929845920194802
+  Avg gate fidelity: 0.858343876736155864
+  Infidelity: 1.416561232638441e-01
+
+================================================================================
+ALL TESTED PATTERNS
+================================================================================
+
+Trotter-1st-Order
+  T-count: 28 → 2
+  Distance: 1.971742037036e+00
+  Fidelity: 0.422364581442975
+
+Trotter-2nd-Order
+  T-count: 41 → 1
+  Distance: 1.971742037036e+00
+  Fidelity: 0.283165111563176
+
+Symmetric-Suzuki
+  T-count: 64 → 2
+  Distance: 1.157342592360e+00
+  Fidelity: 0.858343876736156
+
+Dense-Approximation
+  T-count: 52 → 2
+  Distance: 1.901180878056e+00
+  Fidelity: 0.367059052216399
+
+Optimized-Custom
+  T-count: 60 → 0
+  Distance: 1.820154149598e+00
+  Fidelity: 0.748011435295428
+
+================================================================================
+NOTES
+================================================================================
+- This circuit approximates exp(i(π/7)H) for H = XX + ZI + IZ
+- The approximation uses Clifford+T gates (universal for quantum computing)
+- Trotter decomposition introduces systematic error
+- Higher T-budget generally gives better approximation
+- Operator norm ||U - Ũ|| measures worst-case error
+- Average gate fidelity is the standard quantum fidelity metric

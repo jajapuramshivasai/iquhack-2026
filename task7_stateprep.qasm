@@ -1,0 +1,43 @@
+// Task 7 optimized Clifford+T circuit
+// recursion_depth=1, basic_depth=3
+// T_total=6 (T=4, T†=2)
+// state_distance_2norm=4.062990e-01
+// fidelity=0.84173386
+// accuracy_priority=True
+// max_t_total=1000
+OPENQASM 2.0;
+include "qelib1.inc";
+qreg q[2];
+s q[0];
+s q[0];
+sdg q[0];
+h q[0];
+sdg q[1];
+h q[1];
+sdg q[1];
+t q[1];
+s q[1];
+h q[1];
+s q[1];
+t q[1];
+sdg q[1];
+h q[1];
+sdg q[1];
+tdg q[1];
+s q[1];
+h q[1];
+s q[1];
+tdg q[1];
+s q[1];
+cx q[1],q[0];
+t q[0];
+h q[0];
+t q[0];
+h q[0];
+s q[0];
+h q[0];
+s q[0];
+h q[0];
+s q[0];
+s q[0];
+h q[0];

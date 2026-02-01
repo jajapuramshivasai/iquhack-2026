@@ -1,0 +1,129 @@
+================================================================================
+ULTRA-PRECISION HAMILTONIAN EVOLUTION - OPTIMIZATION REPORT
+Generated: 2026-02-01 14:36:24
+================================================================================
+
+OBJECTIVE
+--------------------------------------------------------------------------------
+Goal: Minimize operator norm distance ||U - Ũ||
+Method: High T-budget circuits + Reed-Muller optimization
+Trade-off: Accepting higher T-count for maximum accuracy
+
+TARGET SYSTEM
+--------------------------------------------------------------------------------
+Hamiltonian: H = XX + ZI + IZ
+Model: 2-qubit Transverse Field Ising Model
+Evolution time: θ = π/7 = 0.448798950512828 rad
+                θ/π = 0.142857142857143
+                θ ≈ 25.7142857143°
+Target operator: exp(iθH)
+
+================================================================================
+BEST CIRCUIT (MINIMUM DISTANCE)
+================================================================================
+T-budget: 250
+Strategy: Extreme
+Initial T-count: 352
+Optimized T-count: 0
+Total gates: 0
+
+ACCURACY METRICS
+--------------------------------------------------------------------------------
+Operator norm ||U - Ũ||: 9.619605658370687928e-01
+Frobenius norm: 1.498953231038737233e+00
+Process fidelity: 0.51716579348390301352
+Avg gate fidelity: 0.61373263478712236640
+Infidelity: 3.862673652128776336e-01
+
+================================================================================
+ALL TESTED CONFIGURATIONS (RANKED BY DISTANCE)
+================================================================================
+
+Rank 1: Extreme (T-budget=250)
+  T-count: 0
+  Distance: 9.619605658370687928e-01
+  Fidelity: 0.61373263478712236640
+
+Rank 2: Max-Precision (T-budget=150)
+  T-count: 2
+  Distance: 1.442689994368947737e+00
+  Fidelity: 0.42361072047882919467
+
+Rank 3: Max-Precision (T-budget=250)
+  T-count: 2
+  Distance: 1.537795469860421926e+00
+  Fidelity: 0.25266559618405126653
+
+Rank 4: Adaptive (T-budget=100)
+  T-count: 2
+  Distance: 1.831806980037965049e+00
+  Fidelity: 0.27048655460603387990
+
+Rank 5: Adaptive (T-budget=150)
+  T-count: 2
+  Distance: 1.831806980037965049e+00
+  Fidelity: 0.27048655460603387990
+
+Rank 6: Adaptive (T-budget=200)
+  T-count: 2
+  Distance: 1.831806980037965049e+00
+  Fidelity: 0.27048655460603387990
+
+Rank 7: Adaptive (T-budget=250)
+  T-count: 2
+  Distance: 1.831806980037965049e+00
+  Fidelity: 0.27048655460603387990
+
+Rank 8: Adaptive (T-budget=300)
+  T-count: 2
+  Distance: 1.831806980037965049e+00
+  Fidelity: 0.27048655460603387990
+
+Rank 9: Extreme (T-budget=150)
+  T-count: 0
+  Distance: 1.949855824363647017e+00
+  Fidelity: 0.22644869113811233463
+
+Rank 10: Extreme (T-budget=100)
+  T-count: 0
+  Distance: 1.949855824363647239e+00
+  Fidelity: 0.22644869113811233463
+
+Rank 11: Max-Precision (T-budget=300)
+  T-count: 1
+  Distance: 1.996347954780612444e+00
+  Fidelity: 0.55042934447755365035
+
+Rank 12: Max-Precision (T-budget=100)
+  T-count: 0
+  Distance: 1.997758747182281081e+00
+  Fidelity: 0.28588456212346274876
+
+Rank 13: Extreme (T-budget=200)
+  T-count: 0
+  Distance: 1.997758747182281081e+00
+  Fidelity: 0.28588456212346274876
+
+Rank 14: Max-Precision (T-budget=200)
+  T-count: 0
+  Distance: 2.000000000000000000e+00
+  Fidelity: 0.31380665377860478271
+
+Rank 15: Extreme (T-budget=300)
+  T-count: 0
+  Distance: 2.000000000000000000e+00
+  Fidelity: 0.31380665377860472720
+
+================================================================================
+INTERPRETATION
+================================================================================
+The operator norm ||U - Ũ|| represents the worst-case error:
+  - It is the maximum singular value of (U - Ũ)
+  - Bounds the error for any input quantum state
+  - Lower values = better approximation
+
+Average gate fidelity is the standard quantum fidelity metric:
+  - Measures how well the gate preserves quantum information
+  - Ranges from 0 (completely wrong) to 1 (perfect)
+  - This circuit achieves: 0.61373263478712236640
+  - Equivalently: 61.373263478712239305% accuracy

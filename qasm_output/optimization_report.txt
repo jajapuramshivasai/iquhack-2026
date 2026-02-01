@@ -1,0 +1,39 @@
+======================================================================
+CRY(π/7) Clifford+T Optimization Report
+Generated: 2026-02-01 02:25:02
+======================================================================
+
+Target: Controlled-Y rotation by π/7 radians (≈25.71°)
+Method: Clifford+T approximation + Reed-Muller optimization
+
+----------------------------------------------------------------------
+OPTIMIZATION RESULTS
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  QASM file: qasm_output/cry_pi7_rpa_effort3.qasm
+  T-count: 3 → 3
+  Reduction: 0 gates (0.0%)
+  Total gates: 7
+  Distance: 3
+  Signature: 517873b91b3778df46d6099200918da18bb33617450f4a4e319466aab870543d
+
+Strategy: RPA-effort5
+  QASM file: qasm_output/cry_pi7_rpa_effort5.qasm
+  T-count: 3 → 3
+  Reduction: 0 gates (0.0%)
+  Total gates: 7
+  Distance: 3
+  Signature: 517873b91b3778df46d6099200918da18bb33617450f4a4e319466aab870543d
+
+Strategy: Dumer-List
+  QASM file: qasm_output/cry_pi7_dumer_list.qasm
+  T-count: 3 → 3
+  Reduction: 0 gates (0.0%)
+  Total gates: 7
+  Distance: 3
+  Signature: 517873b91b3778df46d6099200918da18bb33617450f4a4e319466aab870543d
+
+----------------------------------------------------------------------
+BEST: RPA-effort3 with T-count = 3
+----------------------------------------------------------------------

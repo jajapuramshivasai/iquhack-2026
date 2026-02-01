@@ -1,0 +1,89 @@
+======================================================================
+CRY(π/7) Clifford+T Optimization - 2 Qubits Only (No Ancilla)
+Generated: 2026-02-01 03:10:05
+======================================================================
+
+Target: Controlled-Y rotation by π/7 ≈ 0.4488 rad ≈ 25.71°
+Constraint: Using only 2 qubits (control + target)
+Method: Clifford+T approximation + Reed-Muller optimization
+
+----------------------------------------------------------------------
+Circuit Type: MINIMAL
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  Initial T-count: 1
+  Final T-count: 1
+  Reduction: 0 (0.0%)
+  Total gates: 4
+  QASM file: qasm_output_2qubit/cry_pi7_2q_minimal_rpa_effort3.qasm
+
+Strategy: RPA-effort5
+  Initial T-count: 1
+  Final T-count: 1
+  Reduction: 0 (0.0%)
+  Total gates: 4
+  QASM file: qasm_output_2qubit/cry_pi7_2q_minimal_rpa_effort5.qasm
+
+----------------------------------------------------------------------
+Circuit Type: MEDIUM
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  Initial T-count: 2
+  Final T-count: 2
+  Reduction: 0 (0.0%)
+  Total gates: 5
+  QASM file: qasm_output_2qubit/cry_pi7_2q_medium_rpa_effort3.qasm
+
+Strategy: RPA-effort5
+  Initial T-count: 2
+  Final T-count: 2
+  Reduction: 0 (0.0%)
+  Total gates: 5
+  QASM file: qasm_output_2qubit/cry_pi7_2q_medium_rpa_effort5.qasm
+
+----------------------------------------------------------------------
+Circuit Type: HIGH
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  Initial T-count: 1
+  Final T-count: 1
+  Reduction: 0 (0.0%)
+  Total gates: 5
+  QASM file: qasm_output_2qubit/cry_pi7_2q_high_rpa_effort3.qasm
+
+Strategy: RPA-effort5
+  Initial T-count: 1
+  Final T-count: 1
+  Reduction: 0 (0.0%)
+  Total gates: 5
+  QASM file: qasm_output_2qubit/cry_pi7_2q_high_rpa_effort5.qasm
+
+----------------------------------------------------------------------
+Circuit Type: RICH
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  Initial T-count: 2
+  Final T-count: 2
+  Reduction: 0 (0.0%)
+  Total gates: 2
+  QASM file: qasm_output_2qubit/cry_pi7_2q_rich_rpa_effort3.qasm
+
+Strategy: RPA-effort5
+  Initial T-count: 2
+  Final T-count: 2
+  Reduction: 0 (0.0%)
+  Total gates: 2
+  QASM file: qasm_output_2qubit/cry_pi7_2q_rich_rpa_effort5.qasm
+
+======================================================================
+BEST OVERALL RESULT
+======================================================================
+Circuit Type: minimal
+Strategy: RPA-effort3
+Final T-count: 1
+Total gates: 4
+QASM file: qasm_output_2qubit/cry_pi7_2q_minimal_rpa_effort3.qasm

@@ -1,0 +1,180 @@
+======================================================================
+Hamiltonian Evolution Optimization Report
+Generated: 2026-02-01 03:39:55
+======================================================================
+
+SYSTEM DESCRIPTION
+----------------------------------------------------------------------
+Hamiltonian: H = XX + ZI + IZ
+Model: 2-qubit Transverse Field Ising Model
+Evolution time: θ = π/7 ≈ 0.448799 rad ≈ 25.714°
+Target operator: exp(iθH)
+
+======================================================================
+DISTANCE METRICS EXPLANATION
+======================================================================
+Frobenius distance: ||U_approx - U_exact||_F (matrix 2-norm)
+Operator norm: Largest singular value of (U_approx - U_exact)
+Process fidelity: |tr(U†_exact U_approx)|²/d² (0=orthogonal, 1=identical)
+Avg gate fidelity: (d·F_process + 1)/(d+1) (standard quantum metric)
+Infidelity: 1 - F_avg (error metric, lower is better)
+
+======================================================================
+OPTIMIZATION RESULTS
+======================================================================
+
+----------------------------------------------------------------------
+Circuit Type: MINIMAL
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  T-count: 2 → 2
+  Total gates: 5
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_minimal_rpa_effort3.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.4223645814
+    Infidelity: 5.776354e-01
+    Frobenius distance: 3.313967e+00
+    Operator norm: 1.971742e+00
+    Process fidelity: 0.2779557268
+
+Strategy: RPA-effort5
+  T-count: 2 → 2
+  Total gates: 5
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_minimal_rpa_effort5.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.4223645814
+    Infidelity: 5.776354e-01
+    Frobenius distance: 3.313967e+00
+    Operator norm: 1.971742e+00
+    Process fidelity: 0.2779557268
+
+----------------------------------------------------------------------
+Circuit Type: BASIC_TROTTER1
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  T-count: 3 → 3
+  Total gates: 5
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_basic_trotter1_rpa_effort3.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.4061659670
+    Infidelity: 5.938340e-01
+    Frobenius distance: 2.904144e+00
+    Operator norm: 1.901181e+00
+    Process fidelity: 0.2577074587
+
+Strategy: RPA-effort5
+  T-count: 3 → 3
+  Total gates: 5
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_basic_trotter1_rpa_effort5.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.4061659670
+    Infidelity: 5.938340e-01
+    Frobenius distance: 2.904144e+00
+    Operator norm: 1.901181e+00
+    Process fidelity: 0.2577074587
+
+----------------------------------------------------------------------
+Circuit Type: BASIC_TROTTER2
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  T-count: 0 → 0
+  Total gates: 3
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_basic_trotter2_rpa_effort3.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.4200906630
+    Infidelity: 5.799093e-01
+    Frobenius distance: 2.418830e+00
+    Operator norm: 1.693448e+00
+    Process fidelity: 0.2751133287
+
+Strategy: RPA-effort5
+  T-count: 0 → 0
+  Total gates: 3
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_basic_trotter2_rpa_effort5.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.4200906630
+    Infidelity: 5.799093e-01
+    Frobenius distance: 2.418830e+00
+    Operator norm: 1.693448e+00
+    Process fidelity: 0.2751133287
+
+----------------------------------------------------------------------
+Circuit Type: SYMMETRIC
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  T-count: 0 → 0
+  Total gates: 2
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_symmetric_rpa_effort3.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.2264486911
+    Infidelity: 7.735513e-01
+    Frobenius distance: 3.074835e+00
+    Operator norm: 1.949856e+00
+    Process fidelity: 0.0330608639
+
+Strategy: RPA-effort5
+  T-count: 0 → 0
+  Total gates: 2
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_symmetric_rpa_effort5.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.2264486911
+    Infidelity: 7.735513e-01
+    Frobenius distance: 3.074835e+00
+    Operator norm: 1.949856e+00
+    Process fidelity: 0.0330608639
+
+----------------------------------------------------------------------
+Circuit Type: RICH
+----------------------------------------------------------------------
+
+Strategy: RPA-effort3
+  T-count: 3 → 3
+  Total gates: 5
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_rich_rpa_effort3.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.7619361313
+    Infidelity: 2.380639e-01
+    Frobenius distance: 1.346405e+00
+    Operator norm: 1.133227e+00
+    Process fidelity: 0.7024201641
+
+Strategy: RPA-effort5
+  T-count: 3 → 3
+  Total gates: 5
+  QASM file: qasm_hamiltonian_2qubit/hamiltonian_evo_rich_rpa_effort5.qasm
+
+  Distance Metrics (Optimized):
+    Avg gate fidelity: 0.7619361313
+    Infidelity: 2.380639e-01
+    Frobenius distance: 1.346405e+00
+    Operator norm: 1.133227e+00
+    Process fidelity: 0.7024201641
+
+======================================================================
+BEST BY T-COUNT
+======================================================================
+Circuit Type: basic_trotter2
+Strategy: RPA-effort3
+Final T-count: 0
+Avg gate fidelity: 0.4200906630
+
+======================================================================
+BEST BY FIDELITY
+======================================================================
+Circuit Type: rich
+Strategy: RPA-effort3
+Avg gate fidelity: 0.7619361313
+T-count: 3
